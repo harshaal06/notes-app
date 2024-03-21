@@ -3,7 +3,7 @@ import './NoteCard.css'
 
 function NoteCard({_id, title, content, category}) {
   return (
-    <div class="card m-4 shadow border border-dark-subtle">
+    <div class="card my-4 shadow border border-dark-subtle">
         <h4 class="card-header border-bottom border-dark-subtle">
             {title}
         </h4>

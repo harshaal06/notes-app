@@ -20,14 +20,12 @@ function Home() {
     <div>
         <h1 className="text-center m-4">Home</h1><hr />
         <div className="container">
-            <div className="mx-5">
         {
             notes.map((note) => {
                 const {_id, title, content, category} = note;
                 return( <NoteCard key={_id} _id={_id} title={title} content={content} category={category} /> )
             })
         }
-        </div>
         </div>
     </div>
   )
