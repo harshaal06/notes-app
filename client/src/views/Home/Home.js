@@ -20,9 +20,9 @@ function Home() {
     <div>
         <h1>Home</h1>
         {
-            notes.map((note, index) => {
+            notes.map((note) => {
                 const {_id, title, content, category} = note;
-                return( <NoteCard key={_id} _id={_id} title={title} content={content} category={category} />)
+                return( <NoteCard key={_id} _id={_id} title={title} content={content} category={category} /> )
             })
         }
     </div>
