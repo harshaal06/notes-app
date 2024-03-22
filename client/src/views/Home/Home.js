@@ -19,8 +19,8 @@ function Home() {
     }, []);
     
     return (
-    <div>
-        <h1 className="text-center m-4">All Notes</h1><hr />
+    <div className="body">
+        <h1 className="text-center pt-4">All Notes</h1><hr />
         <div className="container">
         {
             notes.map((note) => {

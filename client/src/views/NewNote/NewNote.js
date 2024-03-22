@@ -27,8 +27,8 @@ function NewNote() {
   }
 
   return (
-    <div>
-      <h1 className="text-center m-4">Add Notes</h1><hr />
+    <div className='body p-4'>
+      <h1 className="text-center">Add Notes</h1><hr />
       <div className="container">
           <div className='col-12 col-sm-7 card m-auto shadow p-4 mt-5'>
             <h4 className="mb-3">WRITE A NOTE</h4>
