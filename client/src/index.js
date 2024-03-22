@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import Home from './views/Home/Home';
 import NewNote from './views/NewNote/NewNote';
+import UpdateNote from './views/UpdateNote/UpdateNote';
 import { Toaster } from 'react-hot-toast';
 
 const router = createBrowserRouter([
@@ -14,8 +15,12 @@ const router = createBrowserRouter([
     element: <Home />
   },
   {
-    path: "/new-note",
+    path: "/new",
     element: <NewNote />
+  },
+  {
+    path: "/update/:id",
+    element: <UpdateNote />
   }
 ])
 

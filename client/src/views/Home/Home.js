@@ -29,8 +29,8 @@ function Home() {
             })
         }
         </div>
-        <Link to={'/new-note'} >
-            <img src={AddIcon} className="position-fixed add-icon shadow-lg" />
+        <Link to={'/new'} >
+            <img src={AddIcon} className="position-fixed add-icon shadow-lg border border-dark-subtle p-2 rounded-circle" />
         </Link>
     </div>
   )
