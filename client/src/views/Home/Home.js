@@ -19,7 +19,7 @@ function Home() {
     }, []);
     
     return (
-    <div className="body">
+    <div className="body pb-5">
         <h1 className="text-center pt-4">All Notes</h1><hr />
         <div className="container">
         {
