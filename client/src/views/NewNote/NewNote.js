@@ -47,6 +47,7 @@ function NewNote() {
                 setCategory(e.target.value)
               }}
               className='mb-3 p-2 rounded border border-black'>
+                <option value="">Select</option>
                 <option value="general">General</option>
                 <option value="college">College</option>
                 <option value="personal">Personal</option>
