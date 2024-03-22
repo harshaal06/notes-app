@@ -64,8 +64,8 @@ function NewNote() {
 
 
             <div className="mb-4">
-              <button type='button' onClick={reset} class="px-4 py-2 rounded bod">Reset</button>
-              <button type='button' onClick={addNote} class="ms-2 px-4 py-2 rounded border bag">Save</button>
+              <button type='button' onClick={reset} class="py-2 rounded bod">Reset</button>
+              <button type='button' onClick={addNote} class="ms-2 py-2 rounded border bag">Save</button>
             </div>
           </div>
         </div>

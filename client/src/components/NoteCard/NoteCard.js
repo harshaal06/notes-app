@@ -21,7 +21,7 @@ function NoteCard({_id, title, content, category, loadNotes}) {
             <blockquote class="blockquote mb-0">
             <p>{content}</p>
             </blockquote>
-            <i className='text-bg-secondary px-3 position-absolute category text-center rounded'>{category}</i>
+            <i className='text-bg-secondary position-absolute category text-center rounded'>{category}</i>
             <img src={DeleteIcon} 
               className='bg-primary-subtle position-absolute delete-icon shadow-sm border border-dark-subtle p-2 rounded-circle'
               alt='delete-icon'
