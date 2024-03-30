@@ -7,12 +7,17 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import Home from './views/Home/Home';
 import NewNote from './views/NewNote/NewNote';
 import UpdateNote from './views/UpdateNote/UpdateNote';
+import Login from './views/Login/Login';
 import { Toaster } from 'react-hot-toast';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/home",
     element: <Home />
+  },
+  {
+    path: "/",
+    element: <Login />
   },
   {
     path: "/new-note",

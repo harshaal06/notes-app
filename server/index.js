@@ -5,6 +5,8 @@ import mongoose from "mongoose";
 dotenv.config();
 
 import Note from "./models/Note.js";
+import Login from "./models/Login.js";
+
 
 const app = express();
 app.use(cors());
@@ -116,6 +118,17 @@ app.delete("/notes/:id", async(req, res)=>{
         success: true,
         message: "Notes deleted successfully",
         data: null
+    })
+})
+
+app.get("/login",async(req, res)=>{
+
+    const password = await Login.find();
+
+    res.json({
+        success: true,
+        message: "password featched successfully",
+        data: password
     })
 })
 

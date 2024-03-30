@@ -30,7 +30,7 @@ function UpdateNote() {
       category: category
     })
     toast.success(response.data.message)
-    window.location.href = '/'
+    window.location.href = '/home'
   }
 
   useEffect(()=>{

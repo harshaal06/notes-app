@@ -15,12 +15,12 @@ function NoteCard({_id, title, content, category, loadNotes}) {
   }
 
   return (
-    <div class="card my-4 shadow border border-dark-subtle position-relative">
-        <h4 class="card-header border-bottom border-dark-subtle">
+    <div className="card my-4 shadow border border-dark-subtle position-relative">
+        <h4 className="card-header border-bottom border-dark-subtle">
             {title}
         </h4>
-        <div class="card-body">
-            <blockquote class="blockquote mb-0">
+        <div className="card-body">
+            <blockquote className="blockquote mb-0">
             <p>{content}</p>
             </blockquote>
             <i className='text-bg-secondary position-absolute category text-center rounded'>{category}</i>
