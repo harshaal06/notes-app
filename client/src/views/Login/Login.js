@@ -21,12 +21,12 @@ function Login() {
     if(!typepassword){
       toast("Enter password")
     }
-    else if(typepassword == apassword){
-      window.location.href = '/home'
-      toast.success("Login successfully")
+    else if(typepassword === apassword){
+      toast.success("Login successfully");
+      window.location.href = '/home';
     }
     else{
-      toast.error("Incorrect password")
+      toast.error("Incorrect password");
       reset();
     }
   }
