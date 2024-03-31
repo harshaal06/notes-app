@@ -43,7 +43,7 @@ function Login() {
       <h1 className="text-center">Login</h1><hr />
       <div className="container">
           <div className='col-12 col-sm-5 card m-auto shadow p-4 mt-5 text-center'>
-            <h4 className="m-3"><b>HELLO 👋,</b> कृपया पासवर्ड टाका 🙏</h4>
+            <h4 className="m-3"><b>HELLO 👋,</b> Please enter the password... </h4>
             <p className="m-2">Password</p>
             <input type='password'
               placeholder='Enter Password'
