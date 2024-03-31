@@ -6,11 +6,13 @@ import toast from 'react-hot-toast';
 function Login() {
   const [apassword, setApassword] = useState('');
   const [typepassword, setTypepassword] = useState('');
+  const [wait, setWait] = useState('Wait 2sec');
 
   const loadPassword = async () =>{
     const response = await axios.get(`${process.env.REACT_APP_API_URL}/login`);
 
     setApassword(response.data.data[0].password);
+    setWait('Login');
   }
 
   useEffect(()=>{
@@ -51,7 +53,7 @@ function Login() {
               className='mb-4 p-2 px-3 rounded border border-black'/>
             
             <div className="mb-4 text-center">
-              <button type='button' onClick={Login} className="py-2 rounded border bag">Login</button>
+              <button type='button' onClick={Login} className="py-2 rounded border bag">{wait}</button>
             </div>
           </div>
         </div>
