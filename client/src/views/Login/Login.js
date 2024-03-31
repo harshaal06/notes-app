@@ -6,9 +6,10 @@ import toast from 'react-hot-toast';
 function Login() {
   const [apassword, setApassword] = useState('');
   const [typepassword, setTypepassword] = useState('');
-  const [wait, setWait] = useState('Wait 2sec');
+  const [wait, setWait] = useState('Wait');
 
   const loadPassword = async () =>{
+    toast("Wait few min to start ✋")
     const response = await axios.get(`${process.env.REACT_APP_API_URL}/login`);
 
     setApassword(response.data.data[0].password);
