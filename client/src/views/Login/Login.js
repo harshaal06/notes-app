@@ -9,11 +9,13 @@ function Login() {
   const [wait, setWait] = useState('Wait');
 
   const loadPassword = async () =>{
-    toast("Wait few min to start ✋")
+    toast.loading('Please wait ⏳ 50 seconds for the server to start.');
     const response = await axios.get(`${process.env.REACT_APP_API_URL}/login`);
 
+    toast.dismiss();
+    toast.success('Server startd successfully!');
+
     setApassword(response.data.data[0].password);
-    setWait('Login');
   }
 
   useEffect(()=>{
